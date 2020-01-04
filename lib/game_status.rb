@@ -17,7 +17,10 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.select do |win_combination|
     win_combination.select do |position|
-      position[0] == "X" && position[1] == "X" && position[2] == "X"
+      if position[0] == "X" && position[1] == "X" && position[2] == "X"
+        return win_combination
+      else
+        false
     end
   end
 end
