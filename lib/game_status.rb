@@ -20,7 +20,7 @@ def won?(board)
       if position == "X"
         return win_index
       else
-        false
+        return false
       end
     end
   end
