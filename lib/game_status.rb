@@ -18,7 +18,7 @@ def won?(board)
   WIN_COMBINATIONS.select do |win_index|
     win_index.select do |position|
       if position == "X"
-        return WIN_COMBINATIONS
+        return win_index
       else
         false
       end
